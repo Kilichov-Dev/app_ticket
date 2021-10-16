@@ -147,7 +147,7 @@ public class OrderServiceImpl implements OrderService {
         payment.setTicketPaymentList(ticketPaymentList);
         payment.setAmount(order.getPrice());
         payment.setUser(order.getUser());
-//        payment.setPayType(payType);
+       payment.setPayType(payType);
 
         order.setFinished(true);
 

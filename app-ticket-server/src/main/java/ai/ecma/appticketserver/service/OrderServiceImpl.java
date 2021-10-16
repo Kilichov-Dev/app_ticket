@@ -142,8 +142,8 @@ public class OrderServiceImpl implements OrderService {
                 bronList.add(bron);
             }
         }
-//        PayType payType = payTypeRepository.findByNameAndPayTypeEnum(currentUser.getRole().getName(), PayTypeEnum.CARD)
-//                .orElseThrow(() -> new RestException("Pay type not found", HttpStatus.NOT_FOUND));
+        PayType payType = payTypeRepository.findByNameAndPayTypeEnum(currentUser.getRole().getName(), PayTypeEnum.CARD)
+                .orElseThrow(() -> new RestException("Pay type not found", HttpStatus.NOT_FOUND));
         payment.setTicketPaymentList(ticketPaymentList);
         payment.setAmount(order.getPrice());
         payment.setUser(order.getUser());

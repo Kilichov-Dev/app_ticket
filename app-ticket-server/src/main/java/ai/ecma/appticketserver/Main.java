@@ -1,7 +1,6 @@
 package ai.ecma.appticketserver;
 
 import java.sql.Timestamp;
-import java.util.UUID;
 
 /**
  * @author Muhammad Mo'minov
